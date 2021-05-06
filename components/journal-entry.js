@@ -89,6 +89,7 @@ class JournalEntry extends HTMLElement {
       // CODE GOES HERE vvv
       entryImage = document.createElement("IMG");
       entryImage.setAttribute("src",entry.image.src);
+      console.log(entry.image);
       entryImage.setAttribute("alt",entry.image.alt);
       this.shadowRoot.querySelector(".entry").appendChild(entryImage);
 
@@ -117,7 +118,7 @@ class JournalEntry extends HTMLElement {
 
       // CODE GOES HERE vvv
       entryAudio = document.createElement("AUDIO");
-      entryAudio.setAttribute("src",entry.audio.src)
+      entryAudio.setAttribute("src",entry.audio.src);
       this.shadowRoot.querySelector(".entry").appendChild(entryAudio);
 
 
