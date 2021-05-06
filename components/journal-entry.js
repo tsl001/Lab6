@@ -116,8 +116,9 @@ class JournalEntry extends HTMLElement {
        */
 
       // CODE GOES HERE vvv
-
-
+      entryAudio = document.createElement("AUDIO");
+      entryAudio.setAttribute("src",entry.audio.src)
+      this.shadowRoot.querySelector(".entry").appendChild(entryAudio);
 
 
 
