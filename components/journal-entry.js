@@ -87,7 +87,10 @@ class JournalEntry extends HTMLElement {
        */
 
       // CODE GOES HERE vvv
-
+      entryImage = document.createElement("IMG");
+      entryImage.setAttribute("src",entry.image.src);
+      entryImage.setAttribute("alt",entry.image.alt);
+      this.shadowRoot.querySelector(".entry").appendChild(entryImage);
 
 
 
